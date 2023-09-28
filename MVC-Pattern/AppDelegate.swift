@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AgxioUIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -27,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window = UIWindow(frame: UIScreen.main.bounds)
         }
         
+        AgxioUIKit.shared.configureColors(primary: "#eb4034", secondary: "#ba34eb", primaryText: "#ffffff", secondaryText: "#ffffff")
         let tabBarVC = TabBarViewController()
         self.window?.rootViewController = tabBarVC
         self.window?.makeKeyAndVisible()

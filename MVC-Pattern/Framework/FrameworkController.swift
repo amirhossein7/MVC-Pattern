@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AgxioUIKit
 
 class FrameworkController: UIViewController {
     
@@ -16,11 +17,17 @@ class FrameworkController: UIViewController {
         return [model1, model2, model3]
     }()
     
+    @IBOutlet weak var btn: UIDefaultButton!
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             tableView.delegate = self
             tableView.dataSource = self
             tableView.register(UINib(nibName: "FrameworkCell", bundle: nil), forCellReuseIdentifier: "FrameworkCell")
+        }
+    }
+    @IBOutlet weak var otp: OTPView!{
+        didSet {
+            otp.setFieldsNumber(count: 4)
         }
     }
 

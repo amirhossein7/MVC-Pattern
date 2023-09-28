@@ -21,6 +21,7 @@
 		602A95152A852F3700E200B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 602A95142A852F3700E200B9 /* Main.storyboard */; };
 		602A95192A854C4300E200B9 /* FrameworkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602A95172A854C4200E200B9 /* FrameworkCell.swift */; };
 		602A951A2A854C4300E200B9 /* FrameworkCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 602A95182A854C4200E200B9 /* FrameworkCell.xib */; };
+		606751462A9F9B3900A27876 /* AgxioUIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 606751452A9F9B3900A27876 /* AgxioUIKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				606751462A9F9B3900A27876 /* AgxioUIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,6 +184,9 @@
 			dependencies = (
 			);
 			name = "MVC-Pattern";
+			packageProductDependencies = (
+				606751452A9F9B3900A27876 /* AgxioUIKit */,
+			);
 			productName = "MVC-Pattern";
 			productReference = 602A94D22A85279400E200B9 /* MVC-Pattern.app */;
 			productType = "com.apple.product-type.application";
@@ -254,6 +259,9 @@
 				Base,
 			);
 			mainGroup = 602A94C92A85279300E200B9;
+			packageReferences = (
+				606751442A9F9B3900A27876 /* XCRemoteSwiftPackageReference "AgxioUIKit" */,
+			);
 			productRefGroup = 602A94D32A85279400E200B9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -634,6 +642,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		606751442A9F9B3900A27876 /* XCRemoteSwiftPackageReference "AgxioUIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/amirhossein7/AgxioUIKit.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		606751452A9F9B3900A27876 /* AgxioUIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 606751442A9F9B3900A27876 /* XCRemoteSwiftPackageReference "AgxioUIKit" */;
+			productName = AgxioUIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 602A94CA2A85279300E200B9 /* Project object */;
 }
